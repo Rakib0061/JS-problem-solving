@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "./variable" ;
+
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ All @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+* {
+    font-family:  'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: $default-color;
+    width: 8px;
+    
+    &-thumb {
+        background-color: $primary-color;
+        @include border ($default-color);
+        border-radius: 100px;
+    }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ All @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+header {
+    .navbar {
+        background: $secondary-color;
+        position: relative;
+
+        .navbar-brand {
+            img {
+                width: 50px;
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+            outline: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .offcanvas {
+            .offcanvas-header {
+
+                h5{
+
+                }
+
+                .btn-close {
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+            }
+        }
+
+        .offcanvas-body {
+            ul {
+                li {
+                    a {
+                        font-size: $p;
+                        font-weight: $p-weight;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+            
+    }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+code {
+    display: none;
+    background: $default-color;
+    color: $code-color !important;
+    font-size: $p !important;
+    font-weight: $p-weight;
+    padding: 10px
+}
+
+button {
+    @include border($default-color);
+    background: $primary-color;
+    font-size: $button !important;
+    font-weight: $button-weight;
+    margin: 0 0 10px !important;
+}
