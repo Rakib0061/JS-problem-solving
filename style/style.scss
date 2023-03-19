@@ -20,6 +20,10 @@
     }
 }
 
+.container {
+    max-width: 1200px !important;
+}
+
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ All @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
@@ -82,19 +86,31 @@ header {
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
-code {
-    display: none;
-    background: $default-color;
-    color: $code-color !important;
-    font-size: $p !important;
-    font-weight: $p-weight;
-    padding: 10px
+.pratice{
+
+    .solving {
+            padding: 50px 0 0;
+
+        code {
+            display: none;
+            background: $default-color;
+            color: $code-color !important;
+            font-size: $p !important;
+            font-weight: $p-weight;
+            padding: 10px
+        }
+
+        button {
+            @include border($default-color);
+            background: $primary-color;
+            font-size: $button !important;
+            font-weight: $button-weight;
+            margin: 0 0 10px !important;
+        }
+
+    }
+
 }
 
-button {
-    @include border($default-color);
-    background: $primary-color;
-    font-size: $button !important;
-    font-weight: $button-weight;
-    margin: 0 0 10px !important;
-}
+
+

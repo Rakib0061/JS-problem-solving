@@ -102,6 +102,7 @@ let today = new Date().getFullYear();
 let bd_days = (today - bd_year) * 365;
 
 console.log(bd_days);
+console.log(new Date());
 
 //  ________Convert Age to days_________
 
