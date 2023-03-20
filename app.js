@@ -102,7 +102,59 @@ let today = new Date().getFullYear();
 let bd_days = (today - bd_year) * 365;
 
 console.log(bd_days);
-console.log(new Date());
 
 //  ________Convert Age to days_________
 
+
+
+
+//  ________Return the first element in an Array_________
+
+let num4 = ["apple","orange","banana","painaple"];
+num4[0]= "jackfruit";
+let fst_element = num4.shift();
+
+console.log(fst_element);
+
+//  ________Return the first element in an Array_________
+
+
+
+
+//  ________Power Calculator_________
+
+let power = Math.pow(12,2);
+
+console.log(power);
+
+//  ________Power Calculator_________
+
+
+
+
+//  ________Convert Hours into Sec_________
+
+let hours = new Date().getHours();
+let sec2 = (hours * 60)* 60 ;
+
+console.log(sec2);
+
+//  ________Convert Hours into Sec_________
+
+
+
+
+//  ________Max edge of a triangle_________
+
+function maxEdge(side1,side2){
+    if(side1 < 0 || side2 < 0){
+        console.log("plese Enter The positive value");
+    }
+    else {
+        const side3 = (side1 + side2)-1; /* ৩ বাহু অবশ্যই ২ বাহুর সমষ্টি থেকে কম হবে [NB : basic in triangle]*/
+        console.log(side3)
+    }
+}
+maxEdge(8,9);
+
+//  ________Max edge of a triangle_________
