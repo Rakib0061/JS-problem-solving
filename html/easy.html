@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicated Js file</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../photos/fabicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Header Part @@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <header>
+
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../photos/navicon.png" alt="navicon">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Solving</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="easy.html">Easy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mediam.html">Mediam</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="project_base.html">Project Base</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Header Part @@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+
+
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Functional Part @@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+<section class="pratice">
+
+  <div class="container">
+
+    <div class="solving">
+
+      <h1 class="text-center">EASY</h1>
+
+      <!-- _________get even odd number_________ -->
+
+      <div class="prob">
+        <h4># Pick Even Odd number.</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let num = [1243,3244];<br>
+          num.map((vlu)=>{<br>
+            if(vlu%2==0){<br>
+              console.log(vlu+" is a even number");<br>
+            } <br>
+            else{ <br>
+              console.log(vlu+" is a odd number"); <br>
+            } <br>
+          });
+        </span>
+      </div>
+
+      <!-- _________sum two number_________ -->
+
+      <div class="prob">
+        <h4># Sum of two number</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let num2 = [232,455];<br>
+          let sum = num2.reduce((accum,vlu)=>{<br>
+            return accum + vlu;<br>
+          });<br>
+          <br>
+          console.log(sum);
+        </span>
+      </div>
+
+      <!-- _________sum two number_________ -->
+
+
+
+
+
+      <!-- _________convert min into sec_________ -->
+
+      <div class="prob">
+        <h4># Convert minutes into seconds</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let date = new Date().getMinutes();<br>
+          let sec = date * 60 <br>
+          console.log(sec);
+        </span>
+      </div>
+
+      <!-- ________convert min into sec_________ -->
+
+
+
+
+      <!-- _________return the 0-10 integer number_________ -->
+
+      <div class="prob">
+        <h4># Return the 0-10 integer number</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let num3 = 0; <br>
+          let pass = setInterval(() => { <br>
+          console.log(num3 ++); <br>
+            if(num3>10){ <br>
+              clearInterval(pass);<br>
+              console.log("finish");<br>
+            } <br>
+          }, 1000);
+        </span>
+      </div>
+
+      <!-- ________return the 0-10 integer number_________ -->
+
+
+
+
+      <!-- ________area of a triangle_________ -->
+
+      <div class="prob">
+        <h4># Area of triangle</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let base = 12; <br>
+          let height = 12; <br>
+          <br>
+          let Tringle_area = 1/2 * (base * height); <br>
+          console.log(Tringle_area);
+        </span>
+      </div>
+
+      <!-- ________area of a triangle_________ -->
+
+
+
+
+      <!-- ________Convert Age to Days_________ -->
+
+      <div class="prob">
+        <h4># Convert Age to Days</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let bd_year = new Date("03/08/1999").getFullYear(); <br>
+          let today = new Date().getFullYear(); <br>
+          let bd_days = (today - bd_year) * 365; <br>
+          <br>
+          console.log(bd_days);
+        </span>   
+      </div>
+
+      <!-- ________Convert Age to Days_________ -->
+
+
+
+
+      <!-- ________Return the first element in an Array_________ -->
+
+      <div class="prob">
+        <h4># Return the first element in an Array</h4>
+        <button class="code_btn">Get Code</button>
+        <br>  
+        <span class="code">
+          let num4 = ["apple","orange","banana","painaple"]; <br>
+          num4[0]= "jackfruit"; <br>
+          let fst_element = num4.shift(); <br>
+          <br>
+          console.log(fst_element);
+        </span>
+      </div>
+
+      <!-- ________Return the first element in an Array_________ -->
+
+
+
+
+
+      <!-- ________Power Calculator_________ -->
+
+      <div class="prob">
+        <h4># Power Calculator</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let power = Math.pow(12,2); <br>
+          <br>
+          console.log(power);
+        </span>
+      </div>
+
+      <!-- ________Power Calculator_________ -->
+
+
+
+
+      <!-- ________Convert Hours into Sec_________ -->
+
+      <div class="prob">
+        <h4># Convert Hours into Sec</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          let hours = new Date().getHours(); <br>
+          let sec2 = (hours * 60)* 60 ; <br>
+          <br>
+          console.log(sec2);
+        </span>
+      </div>
+
+        <!-- ________Convert Hours into Sec_________ -->
+
+
+
+
+      <!-- ________Max edge of a triangle_________ -->
+
+      <div class="prob">
+        <h4># Max edge of a triangle</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+          function maxEdge(side1,side2){<br>
+            if(side1 < 0 || side2 < 0){ <br>
+              console.log("plese Enter The positive value"); <br>
+            } <br>
+            else { <br>
+              const side3 = (side1 + side2)-1; <br>
+              console.log(side3) <br>
+            } <br>
+          } <br>
+          maxEdge(8,9);
+        </span>
+      </div>
+
+      <!-- ________Max edge of a triangle_________ -->
+
+
+
+
+      <!-- ________Input item sort and display_________ -->
+
+      <div class="prob">
+        <h4># Input item sort and display</h4>
+        <button class="code_btn">Get Code</button>
+        <br>
+        <span class="code">
+                  // @@@@@@@@@@@@@@aother exprement@@@@@@@@@@@@@@ </br>
+          <br>
+          let hyper = document.getElementById("hyper"); <br>
+          <br>
+                  // ~~~~~~~~~~~~~~~~~~ creat element ~~~~~~~~~~~~~~~~~~ </br>
+          <br>
+          let ul = document.createElement("ul"); <br>
+          let input = document.createElement("input"); <br>
+          let btn = document.createElement("button"); <br>
+          btn.textContent = "Click"; <br>
+          <br>
+                  // ~~~~~~~~~~~~~~ creat myPush prototype ~~~~~~~~~~~~~~ </br>
+          <br>
+          Array.prototype.myPush = function(...a){ <br>
+            this.push(a); <br>
+            init(); <br>
+          } <br>
+          <br>
+                  // ~~~~~~~~~~~~~~~~ make li & li item ~~~~~~~~~~~~~~~~ </br>
+        </br>
+          let flower = ["rose","lily","sunflower","jasmine"]; <br>
+        <br>
+          const init = ()=>{ <br>
+            ul.innerHTML = ""; <br>
+            flower.sort().map(vlu =>{ <br>
+              let dad = vlu.toString().charAt(0).toUpperCase() + vlu.toString().slice(1).toLowerCase(); <br>
+              <br>
+              let li = document.createElement("li"); <br>
+              li.textContent = dad; <br>
+              ul.appendChild(li); <br>
+            }); <br>
+          }; <br>
+          <br>
+          init(); <br>
+          <br>
+                  // ~~~~~~~~~~~~~~~~~~~ Click Event ~~~~~~~~~~~~~~~~~~~ </br>
+          <br>
+          btn.addEventListener("click",()=>{ <br>
+            flower.myPush(input.value); <br>
+            input.value = ""; <br>
+          }); <br>
+          <br>
+                  // ~~~~~~~~~~~~~ append parent tag ~~~~~~~~~~~~~ </br>
+          <br>
+          hyper.appendChild(ul); <br>
+          hyper.appendChild(input); <br>
+          hyper.appendChild(btn); <br>
+          <br>
+                  // @@@@@@@@@@@@@@aother exprement@@@@@@@@@@@@@@
+        </span>
+      </div>
+
+      <!-- ________Input item sort and display_________ -->
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Functional Part @@@@@@@@@@@@@@@@@@@@@@ -->
+
+    
+    <script src="../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>

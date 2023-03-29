@@ -1,3 +1,20 @@
+//  _________@@@@@@@@@@@@@@Sticky Navbar@@@@@@@@@@@@@@_________ 
+
+
+let navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll",()=>{
+    let Y = window.scrollY;
+    navbar.classList.toggle("sticky",Y > 0);
+});
+
+//  _________@@@@@@@@@@@@@@Sticky Navbar@@@@@@@@@@@@@@_________ 
+
+
+
+
+
+
 //  _________@@@@@@@@@@@@@@get code btn@@@@@@@@@@@@@@_________ 
 
 let code_btn = document.querySelectorAll(".code_btn");
@@ -7,8 +24,8 @@ for(let i=0; i<code_btn.length; i++){
 
     code_btn[i].addEventListener("click",function(){
 
-        if(code[i].style.display != "block"){
-            code[i].style.display = "block";
+        if(code[i].style.display != "inline-block"){
+            code[i].style.display = "inline-block";
         }
         else{
             code[i].style.display = "none";
