@@ -1,11 +1,13 @@
 // @@@@@@@@@@@@ COLOR @@@@@@@@@@@@ 
 
-$primary-color : #f2cb00;
+$primary-color : #d5b92c;
 $secondary-color : #ccc;
+$bg : #1e1e20;
 $default-color : #000;
 $code-color : green;
-$bulit-point : linear-gradient(#f2cb00, #ba4646);
+$banner-h1 : linear-gradient(45deg, #d5b92c, #f10808);
 $shadow : 5px 5px 12px 5px #bfbfbfde;
+$nav-sarch : #414142;
 
 // @@@@@@@@@@@@ COLOR @@@@@@@@@@@@ 
 
@@ -14,17 +16,20 @@ $shadow : 5px 5px 12px 5px #bfbfbfde;
 
 // @@@@@@@@@@@@ FONT @@@@@@@@@@@@ 
 
-$title : 45px;
+$loader: 30em;
+$loader_weight: 900;
+
+$title : 55px;
 $-title-weight : 900;
 
-$h1 : 44px;
+$h1 : 40px;
 $h1-weight : 800;
 
 $h4 : 30px; 
 $h4-weight : 600; 
 
-$p : 17px;
-$p-weight : 300;
+$p : 20px;
+$p-weight : 500;
 
 $button : 17px;
 $button-weight : 500;
@@ -36,11 +41,11 @@ $button-weight : 500;
 
 // @@@@@@@@@@@@ MIXIN @@@@@@@@@@@@ 
 
-@mixin border($color){
-    border: 1px solid $color; /* border */
+@mixin border($width : 1px,$color){
+    border: $width solid $color; /* border */
 }
 
-@mixin transition ($all,$time,$ease:cubic-bezier(0.29, -0.16, 0.87, 0.65)){
+@mixin transition ($all:all,$time,$ease:cubic-bezier(0.55, 0.06, 0.27, 0.79)){
     transition: $all $time $ease; /* transition effect */
 }
 

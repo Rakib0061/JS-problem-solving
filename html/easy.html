@@ -11,43 +11,108 @@
 </head>
 <body>
 
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Preeloader @@@@@@@@@@@@@@@@@@@@@@ -->
+
+<div class="preeloader">
+
+  <video loop autoplay muted>
+    <source src="../photos/svg_musk.mp4" type="video/mp4">
+  </video>
+
+  <svg class="svg_main">
+      <text x="50%" y="70%">C</text>
+  </svg>
+
+  <svg class="svg_stolen" width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+    <g class="layer">
+     <title>Layer 1</title>
+     <text fill="#000000" font-family="Sans-serif" font-size="80px" font-weight="900" id="svg_2" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(5.52079 0 0 5.27422 -1538.26 -813.814)" x="338.31" xml:space="preserve" y="231.39">C</text>
+    </g>
+   </svg>
+
+</div>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Preeloader @@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+
+
+
 <!-- @@@@@@@@@@@@@@@@@@@@@@ Header Part @@@@@@@@@@@@@@@@@@@@@@ -->
 
     <header>
 
-      <nav class="navbar fixed-top">
+      <!-- ---------------------- Navabar ---------------------- -->
+
+      <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../photos/navicon.png" alt="navicon">
+            <div class="brand_circle"></div>
+            <img src="../photos/navicon.png" alt="navicon.png">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Solving</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="easy.html">Easy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mediam.html">Mediam</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="project_base.html">Project Base</a>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">EASY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mediam">MEDIAM</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#hard">HARD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project_bases">PROJECT BASE</a>
+              </li>
+              <form class="d-flex" role="search">
+                <input id="nav_search" class="active form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="nav_search_btn" class="btn btn-outline-success" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </form>
-            </div>
+            </ul>
           </div>
         </div>
       </nav>
+
+      <!-- ---------------------- Navabar ---------------------- -->
+
+
+
+      <!-- ---------------------- Banner ---------------------- -->
+
+      <main>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xl">
+              <article class="banner_title">
+
+                <h1><span>Java Script</span><br> Problem Solving</h1>
+                <p>Get reuseable code for my project. In there I highlight raw js. You can get project base code also</p>
+                <button>Get Start</button>
+
+              </article>
+            </div>
+            <div class="col-xl">
+              <article class="banner_img">
+
+                <div class="banner_circle"></div>
+                <img id="parallax" src="../photos/banner_img.png" alt="banner_img">
+
+              </article>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- ---------------------- Banner ---------------------- -->
+
 
     </header>
 
@@ -56,263 +121,20 @@
 
 
 
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Header Part @@@@@@@@@@@@@@@@@@@@@@ -->
 
-<!-- @@@@@@@@@@@@@@@@@@@@@@ Functional Part @@@@@@@@@@@@@@@@@@@@@@ -->
 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero eligendi aliquid. Eum dignissimos, quis delectus molestiae voluptatum, labore aspernatur provident rerum vitae ex commodi nihil adipisci non quo architecto illo sint omnis reiciendis, totam quia nemo. Fuga harum nesciunt totam ipsum quas, soluta voluptas consequuntur voluptatem. Optio culpa suscipit animi laudantium ullam esse quas iure similique illo. Dolore tempora inventore sequi praesentium, enim recusandae voluptatem libero laudantium quae neque deserunt delectus eius cumque mollitia vero. Molestiae asperiores laboriosam expedita. Asperiores vitae ex molestiae modi soluta consequuntur. Iste saepe quo excepturi quas rem nemo fugit, nihil eveniet reiciendis minus! Error cum, numquam ipsa fugiat quas aperiam libero voluptatem quae alias animi vero sunt labore minima quo cupiditate dolorem qui vitae quibusdam ipsum aut nam. Eum eveniet natus beatae harum velit, illum nesciunt consequuntur debitis saepe temporibus distinctio ea nostrum sequi placeat dolor dolores quis quae cupiditate quibusdam? Velit quidem odit mollitia accusamus eaque quaerat, facilis vitae ad consequuntur dolorem laboriosam numquam, labore ex consequatur, alias minus unde sequi sit magni. Nemo corrupti eaque quod nesciunt perspiciatis mollitia saepe commodi atque perferendis consectetur placeat pariatur officia sapiente cumque in, natus molestiae dolores, inventore consequuntur obcaecati nisi distinctio dolor sed laudantium? Debitis soluta deleniti in voluptates porro, reiciendis facilis qui nemo magnam neque unde blanditiis, vero quo ipsum numquam nostrum! Ut, similique. Ea alias autem ducimus error odit suscipit eveniet velit ipsum non harum ut consequuntur accusamus deserunt magni, voluptates et? Dignissimos itaque natus velit, vel vitae cupiditate suscipit? Rem harum ab, iusto explicabo optio fugiat nam quos itaque sed. Autem culpa maxime odit harum dolorum repudiandae accusamus delectus temporibus, dolores esse deleniti, expedita eos cupiditate minima sed labore nostrum. Sint soluta sapiente blanditiis quos similique adipisci dolorem necessitatibus, enim, rerum quis cupiditate beatae. Illo, laborum ducimus hic itaque amet cum, nulla molestiae nisi temporibus sint perspiciatis. At commodi molestiae eaque deleniti, est amet, earum minus rerum provident magnam et numquam! Cupiditate nulla laudantium iure asperiores tenetur, odio est minus eum. Incidunt ratione cupiditate rem, placeat debitis ab aliquid architecto ipsa quasi magni odio fuga mollitia et? Delectus ut ducimus accusamus! Eligendi voluptate corrupti nam aliquam saepe sunt aut fugit maiores! Nisi eligendi tenetur iusto assumenda aliquid totam asperiores aut expedita fugit placeat laudantium nesciunt et at cupiditate quae voluptates dolorum autem labore sit, consequatur dicta eos corporis! Ea, doloribus repellendus consectetur maxime eos maiores esse, quam tempora perspiciatis molestias porro! Impedit aliquam porro, ad quidem repellat harum cum, nihil dolorum soluta voluptatibus eaque minima ratione. Possimus repudiandae ex impedit aperiam voluptatibus, exercitationem laborum aliquam tempora unde amet quidem similique quibusdam iusto perferendis voluptate reprehenderit saepe ipsa, illo dolorum autem voluptates aut. Porro laboriosam sint aperiam eos itaque, unde veniam quae doloribus culpa atque blanditiis modi voluptatibus nobis maxime ipsam ratione tempora possimus minima provident hic! Quos ad repellat maxime dicta veniam dolore quas veritatis! Obcaecati eum quas dolores quidem tenetur animi similique repellat iusto velit quis unde sint aliquam dicta mollitia doloribus laboriosam deserunt veritatis laudantium, error deleniti. Mollitia magnam maiores debitis rem perspiciatis voluptatum quos excepturi. Culpa nobis adipisci, vitae excepturi rem in repellendus perferendis amet consequatur saepe non placeat, dolores totam nesciunt neque sequi rerum eum officia voluptate perspiciatis quae voluptatibus veritatis consectetur harum. Ipsam molestiae earum necessitatibus, ut neque veniam accusantium. Soluta animi ex veritatis sed, vitae magni fugit maiores minus id veniam temporibus adipisci, voluptatibus sapiente placeat? Cum illo, dignissimos laudantium quo maxime adipisci magnam delectus voluptatum consectetur iure et explicabo officiis blanditiis dolore odit est dolor, ab molestias accusamus doloremque ullam? Et enim amet, sapiente magni minus culpa! Ullam consequuntur voluptates cum sit laborum nesciunt reiciendis, dicta, ab, vero quisquam exercitationem ipsam. Accusamus vero consectetur temporibus, nostrum sed dolorum facere animi. Pariatur suscipit inventore perspiciatis porro nam temporibus repellat dolorum dicta illo aliquam quibusdam tempora error perferendis ex, hic eos asperiores maiores optio praesentium minus ea distinctio obcaecati amet. Harum aut, fugit amet dolorem corrupti nesciunt dicta ipsa similique molestiae est eligendi commodi aliquid minus reprehenderit ipsam nemo sed esse natus temporibus ut obcaecati quisquam? Quibusdam voluptates amet sunt at consequatur? Repellat omnis nulla corporis temporibus unde tenetur. Esse modi, perspiciatis tenetur quia nostrum optio error voluptate inventore dolorem consequatur provident necessitatibus saepe repellendus asperiores expedita blanditiis accusantium, a architecto libero vero praesentium laborum mollitia nemo. Cum assumenda consequuntur amet consectetur eaque voluptates a. Explicabo asperiores molestiae, dolorem quo sed officia id sapiente delectus eos velit tempore adipisci odio quisquam dolorum tempora, cumque voluptatum libero reprehenderit ipsam odit nisi expedita. Totam aut tenetur dolor consectetur tempore, quibusdam asperiores explicabo deleniti, nulla veniam optio. Vero, animi voluptatem, laboriosam commodi dolor dolore sapiente veritatis ex sit qui id iure exercitationem eaque modi dolorum minima? Facere sequi dignissimos cupiditate atque ducimus inventore optio praesentium officia laborum at officiis aliquam nostrum sunt voluptatibus necessitatibus non, assumenda dolores debitis error ut. Cumque ipsam repudiandae necessitatibus excepturi animi fugit cupiditate temporibus modi voluptate! Earum ut dolores eveniet harum explicabo autem distinctio qui magni ipsa similique maxime vero incidunt, assumenda nesciunt corporis placeat numquam ducimus adipisci molestiae quasi deleniti libero cumque saepe natus. Eaque at non officia labore, itaque amet vero reiciendis excepturi voluptates, perspiciatis dolor, quas dolorem esse odio sequi iure aperiam impedit fugiat? Libero fugit maxime optio voluptas sint, dolor ea non ipsum a, et debitis! Itaque commodi quas distinctio nesciunt facilis officiis asperiores maxime libero ab. Incidunt veniam pariatur, accusantium aliquam earum corrupti ad nobis voluptas autem repellendus cum. Fugiat earum quaerat repellendus at. Quas officia, at quis, unde esse dolor sunt voluptates eveniet nam ipsam expedita deserunt id praesentium. Porro qui minus animi, delectus dolore labore? In debitis repellendus quam est ipsa, itaque consequuntur eos quas accusantium ut soluta, fugiat blanditiis nulla ratione id quos aliquid corrupti vitae eius quo doloribus quisquam? Voluptatum officiis reiciendis aliquam voluptatibus deserunt totam assumenda corrupti, consequuntur quo. Consequatur voluptatum delectus quidem at eius! Veniam, iure qui nobis reiciendis consequatur quibusdam molestias libero sint modi, necessitatibus ipsum est fugit sunt similique maxime numquam nemo facere perferendis perspiciatis, provident ad dolore voluptates. Cumque, quisquam hic!</p>
 
-<section class="pratice">
 
-  <div class="container">
+<!-- @@@@@@@@@@@@@@@@@@@@@@ Header Part @@@@@@@@@@@@@@@@@@@@@@ -->
 
-    <div class="solving">
 
-      <h1 class="text-center">EASY</h1>
-
-      <!-- _________get even odd number_________ -->
-
-      <div class="prob">
-        <h4><span></span> Pick Even Odd number.</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-          <textarea class="code">
-            let num = [1243,3244];
-            num.map((vlu)=>{
-              if(vlu%2==0){
-                console.log(vlu+" is a even number");
-              } 
-              else{ 
-                console.log(vlu+" is a odd number"); 
-              } 
-            }); 
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- _________sum two number_________ -->
-
-      <div class="prob">
-        <h4><span></span> Sum of two number</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-          <textarea class="code">
-            let num2 = [232,455];
-            let sum = num2.reduce((accum,vlu)=>{
-              return accum + vlu;
-            });
-            
-            console.log(sum);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- _________sum two number_________ -->
-
-
-
-
-
-      <!-- _________convert min into sec_________ -->
-
-      <div class="prob">
-        <h4><span></span> Convert minutes into seconds</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-         <textarea> 
-          class="code" let date = new Date().getMinutes();
-          let sec = date * 60;
-          console.log(sec);
-        </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- ________convert min into sec_________ -->
-
-
-
-
-      <!-- _________return the 0-10 integer number_________ -->
-
-      <div class="prob">
-        <h4><span></span> Return the 0-10 integer number</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-          <textarea class="code">
-            let num3 = 0;
-            let pass = setInterval(() =>{
-            console.log(num3 ++);
-              if(num3>10){
-                clearInterval(pass);
-                console.log("finish");
-              } 
-            }, 1000);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- ________return the 0-10 integer number_________ -->
-
-
-
-
-      <!-- ________area of a triangle_________ -->
-
-      <div class="prob">
-        <h4><span></span> Area of triangle</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-          <textarea class="code">
-            let base = 12;
-            let height = 12;
-            
-            let Tringle_area = 1/2 * (base * height);
-            console.log(Tringle_area);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- ________area of a triangle_________ -->
-
-
-
-
-      <!-- ________Convert Age to Days_________ -->
-
-      <div class="prob">
-        <h4><span></span> Convert Age to Days</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-          <textarea class="code">
-            let bd_year = new Date("03/08/1999").getFullYear();
-            let today = new Date().getFullYear();
-            let bd_days = (today - bd_year) * 365;
-            
-            console.log(bd_days);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>   
-      </div>
-
-      <!-- ________Convert Age to Days_________ -->
-
-
-
-
-      <!-- ________Return the first element in an Array_________ -->
-
-      <div class="prob">
-        <h4><span></span> Return the first element in an Array</h4>
-        <button class="code_btn">Get Code</button>
-        <br>  
-        <main class="main">
-          <textarea class="code">
-            let num4 = ["apple","orange","banana","painaple"]; 
-            num4[0]= "jackfruit"; 
-            let fst_element = num4.shift();
-            
-            console.log(fst_element);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- ________Return the first element in an Array_________ -->
-
-
-
-
-
-      <!-- ________Power Calculator_________ -->
-
-      <div class="prob">
-        <h4><span></span> Power Calculator</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-          <textarea class="code">
-            let power = Math.pow(12,2);
-
-            console.log(power);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- ________Power Calculator_________ -->
-
-
-
-
-      <!-- ________Convert Hours into Sec_________ -->
-
-      <div class="prob">
-        <h4><span></span> Convert Hours into Sec</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-          <textarea class="code">
-            let hours = new Date().getHours();
-            let sec2 = (hours * 60)* 60 ;
-            
-            console.log(sec2);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-        <!-- ________Convert Hours into Sec_________ -->
-
-
-
-
-      <!-- ________Max edge of a triangle_________ -->
-
-      <div class="prob">
-        <h4><span></span> Max edge of a triangle</h4>
-        <button class="code_btn">Get Code</button>
-        <br>
-        <main class="main">
-           <textarea class="code"> 
-            function maxEdge(side1,side2){
-              if(side1 < 0 || side2 < 0){
-              console.log("plese Enter The positive value");
-              } 
-              else { 
-                const side3 = (side1 + side2)-1;
-                console.log(side3)
-              }
-            }
-            maxEdge(8,9);
-          </textarea>
-          <button class="copy_btn">COPY</button>
-        </main>
-      </div>
-
-      <!-- ________Max edge of a triangle_________ -->
-
-
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- @@@@@@@@@@@@@@@@@@@@@@ Functional Part @@@@@@@@@@@@@@@@@@@@@@ -->
 
 
     
     <script src="../app.js"></script>
+    <script src="https://kit.fontawesome.com/bf8030206b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
 </body>
