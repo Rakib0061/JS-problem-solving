@@ -38,47 +38,76 @@ body {
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Preeloader @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 .preeloader {
+    display: block;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
+    // background-color: antiquewhite;
+    overflow: hidden;
 
-    video {
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .svg_main {
-        width: 100%;
-        height: 100vh;
+    &::before {
+        content: "";
+        border-radius: 40%;
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
-
-        text {
-            fill: $secondary-color;
-            font-size: $loader;          
-            font-weight: $loader_weight;
-            text-anchor: middle;
-        }
-
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 500px;
+        background-color: $preeloader;
+        animation: liquid 5.8s linear infinite alternate;
     }
+
+    @keyframes liquid {
+        0%{
+            top: 500px;
+            transform: translateX(-50%)  rotate(360deg);
+        }
+        100%{
+            top: 80px;
+            transform: translateX(-50%) rotate(0deg);
+        }
+    }
+
+    // .box {
+    //     position: relative;
+
+        
+
+    //     h1 {
+    //         font-size: $loader;
+    //         font-weight: $loader_weight;
+    //         color: transparent;
+    //         -webkit-text-stroke: 2px #127aa9;
+    //         -webkit-box-reflect: below -219px;            
+    //     }
+
+    // }
+
+    
 
     .svg_stolen {
         position: absolute;
         top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
 
-        text {
-            text-anchor: middle;
-            fill: none;
-            stroke-width: 1px;
-            stroke-dasharray: 200;
+        rect {
+            fill: #fff;
+            mask: url(#mask);
+            height: 100%;
+            width: 100%;
         }
 
+        text {
+            stroke-linejoin: round;
+            text-anchor: middle;
+            fill: #fff;
+            stroke-width: 6px;
+        }
     }
-
 
 }
 

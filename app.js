@@ -1,5 +1,25 @@
 //  _________@@@@@@@@@@@@@@ Sticky Navbar @@@@@@@@@@@@@@_________ 
 
+let preeloader = document.getElementById("preeloader");
+
+window.addEventListener("load",()=>{
+    setTimeout(() => {
+        preeloader.style.display = "none";
+    }, 3000);
+});
+
+if(history.scrollRestoration){
+    history.scrollRestoration = "manual"
+}
+
+//  _________@@@@@@@@@@@@@@ Sticky Navbar @@@@@@@@@@@@@@_________ 
+
+
+
+
+
+//  _________@@@@@@@@@@@@@@ Sticky Navbar @@@@@@@@@@@@@@_________ 
+
 
 let navbar = document.querySelector(".navbar");
 
@@ -22,12 +42,10 @@ let nav_search_btn = document.getElementById("nav_search_btn");
 nav_search_btn.addEventListener("mouseenter",()=>{
         input_Search.style.display = "block";
         input_Search.style.width = 150 + "px";
-        // input_Search.classList.add("active");
     });
 nav_search_btn.addEventListener("click",()=>{
     input_Search.style.display = "none";
     input_Search.style.width = 0 + "px";
-    // input_Search.classList.remove("active");
 });    
         
 //  _________@@@@@@@@@@@@@@ Search Button @@@@@@@@@@@@@@_________ 

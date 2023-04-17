@@ -24,39 +24,54 @@ body {
 }
 
 .preeloader {
+  display: block;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
-.preeloader video {
-  width: 100%;
-  height: 100vh;
-}
-.preeloader .svg_main {
-  width: 100%;
-  height: 100vh;
+.preeloader::before {
+  content: "";
+  border-radius: 40%;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: #2222c3;
+  animation: liquid 5.8s linear infinite alternate;
 }
-.preeloader .svg_main text {
-  fill: #ccc;
-  font-size: 30em;
-  font-weight: 900;
-  text-anchor: middle;
+@keyframes liquid {
+  0% {
+    top: 500px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+  100% {
+    top: 80px;
+    transform: translateX(-50%) rotate(0deg);
+  }
 }
 .preeloader .svg_stolen {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+}
+.preeloader .svg_stolen rect {
+  fill: #fff;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+  height: 100%;
+  width: 100%;
 }
 .preeloader .svg_stolen text {
+  stroke-linejoin: round;
   text-anchor: middle;
-  fill: none;
-  stroke-width: 1px;
-  stroke-dasharray: 200;
+  fill: #fff;
+  stroke-width: 6px;
 }
 
 header .navbar {
