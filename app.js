@@ -39,13 +39,13 @@ window.addEventListener("scroll",()=>{
 let input_Search = document.getElementById("nav_search");
 let nav_search_btn = document.getElementById("nav_search_btn");
 
-nav_search_btn.addEventListener("mouseenter",()=>{
-        input_Search.style.display = "block";
-        input_Search.style.width = 150 + "px";
-    });
-nav_search_btn.addEventListener("click",()=>{
-    input_Search.style.display = "none";
-    input_Search.style.width = 0 + "px";
+nav_search_btn.addEventListener("mouseenter", () => {
+  input_Search.style.display = "block";
+  input_Search.style.width = 150 + "px";
+});
+nav_search_btn.addEventListener("mouseover", () => {
+  input_Search.style.display = "none";
+  input_Search.style.width = 0 + "px";
 });    
         
 //  _________@@@@@@@@@@@@@@ Search Button @@@@@@@@@@@@@@_________ 
