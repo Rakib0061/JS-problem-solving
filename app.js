@@ -1,18 +1,18 @@
-//  _________@@@@@@@@@@@@@@ Sticky Navbar @@@@@@@@@@@@@@_________ 
+//  _________@@@@@@@@@@@@@@ preeloader @@@@@@@@@@@@@@_________ 
 
-let preeloader = document.getElementById("preeloader");
+// let preeloader = document.getElementById("preeloader");
 
-window.addEventListener("load",()=>{
-    setTimeout(() => {
-        preeloader.style.display = "none";
-    }, 3000);
-});
+// window.addEventListener("load",()=>{
+//     setTimeout(() => {
+//         preeloader.style.display = "none";
+//     }, 3000);
+// });
 
-if(history.scrollRestoration){
-    history.scrollRestoration = "manual"
-}
+// if(history.scrollRestoration){
+//     history.scrollRestoration = "manual"
+// }
 
-//  _________@@@@@@@@@@@@@@ Sticky Navbar @@@@@@@@@@@@@@_________ 
+//  _________@@@@@@@@@@@@@@ preeloader @@@@@@@@@@@@@@_________ 
 
 
 
@@ -56,13 +56,39 @@ nav_search_btn.addEventListener("mouseover", () => {
 
 //  _________@@@@@@@@@@@@@@ Parallax Effect @@@@@@@@@@@@@@_________ 
 
-let parallax = document.getElementById("parallax");
+// let parallax = document.getElementById("parallax");
 
-window.addEventListener("mousemove",(e)=>{
-    let X = (window.innerWidth - e.clientX) / 30;
-    let Y = (window.innerHeight - e.clientY) / 20;
+// window.addEventListener("mousemove",(e)=>{
+//     let X = (window.innerWidth - e.clientX) / 30;
+//     let Y = (window.innerHeight - e.clientY) / 20;
 
-    parallax.style.transform = `translateX(${X}px) translateY(${Y}px)`;
-});
+//     parallax.style.transform = `translateX(${X}px) translateY(${Y}px)`;
+// });
 
-//  _________@@@@@@@@@@@@@@ Parallax Effect @@@@@@@@@@@@@@_________ 
+//  _________@@@@@@@@@@@@@@ Parallax Effect @@@@@@@@@@@@@@_________
+
+
+
+
+//  _________@@@@@@@@@@@@@@ Canvas particle @@@@@@@@@@@@@@_________
+
+// let partical = document.getElementById("partical");
+// let ctx = partical.getContext("2d");
+
+// console.log(ctx);
+
+// ctx.moveTo(500, 10);
+// ctx.lineTo(100, 200);
+// ctx.stroke();
+// ctx.filStyle = "white"
+
+    
+// partical.innerHTML = x;
+
+
+//  _________@@@@@@@@@@@@@@ Canvas particle @@@@@@@@@@@@@@_________
+
+
+
+//  @@@@@@@@@@@@@@@@@@@@@@@@ html content @@@@@@@@@@@@@@@@@@@@@@@@
+
